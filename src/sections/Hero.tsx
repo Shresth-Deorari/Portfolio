@@ -69,10 +69,10 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className='font-serrif text-3xl md:text-5xl text-center mt-8 tracking-wide'>
-            Hi! I'm Shresth
+            Hi! I&apos;m Shresth
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            I'm a tech enthusiast exploring the realms of software development. I thrive on solving challenges and learning
+            I&apos;m a tech enthusiast exploring the realms of software development. I thrive on solving challenges and learning
              new technologies.
           </p>
         </div>
@@ -83,7 +83,7 @@ export const HeroSection = () => {
           </button>
           <a href="https://www.linkedin.com/in/shresth-deorari-iit-patna/" target="_blank" rel="noopener noreferrer">
             <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl' onClick={()=>{}}>
-              <span className='font-semibold '>Let's Connect</span>
+              <span className='font-semibold '>Let&apos;s Connect</span>
             </button>
           </a>
         </div>
