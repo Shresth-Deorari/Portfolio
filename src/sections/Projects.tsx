@@ -1,7 +1,6 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
-import { profileEnd } from "console";
 import Image from 'next/image'
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrayUpRightIcon from '@/assets/icons/arrow-up-right.svg'
@@ -50,7 +49,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-  <section className="pb-16 lg:py-24">
+  <section className="pb-16 lg:py-24" id="Projects">
     <div className="container">
       <SectionHeader eyebrow="Real-World Results" title="Featured Projects" description="See how i transformed concepts into egaging digital experiences."/>
       <div className="flex flex-col mt-10 md:mt-20 gap-20">

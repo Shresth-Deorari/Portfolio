@@ -92,7 +92,7 @@ const hobbies = [
 export const AboutSection = () => {
   const constraintRef = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div className="py-20 lg:py-28" id="About">
       <div className="container">
         <SectionHeader eyebrow="About Me" title="A Glimpse Into My World"
           description="Learn more about who i am, what i do and what inspires me"
