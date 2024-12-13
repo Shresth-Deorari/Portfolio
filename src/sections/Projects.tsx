@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import laundryLink from '@/assets/images/laundry-link.png'
+import wcaShresth from '@/assets/images/wca-shresth.png'
+import littleLemon from '@/assets/images/little-lemon.png'
 import Image from 'next/image'
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrayUpRightIcon from '@/assets/icons/arrow-up-right.svg'
@@ -10,49 +10,49 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+    "month": "October",
+    "year": "2024",
+    "title": "Laundry Link",
+    "results": [
+      { "title": "Built using Jetpack Compose and Material3 for a sleek, responsive UI." },
+      { "title": "Enabled real-time bookings with Firebase Firestore, supporting 100 users." },
+      { "title": "Revolutionizing machine management at IIT Patna, awaiting official recognition." }
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    "link": "https://github.com/Shresth-Deorari/Laundry-Link",
+    "image": laundryLink
+  },  
+  {
+    "month": "August",
+    "year": "2024",
+    "title": "WhatsApp Chat Analyser",
+    "results": [
+      { "title": "Performed EDA and sentiment analysis, providing valuable insights." },
+      { "title": "Utilized SQLAlchemy for database integration for real-time data exploration." },
+      { "title": "Built a secure encryption system using werkzeug." }
+    ],
+    "link": "https://github.com/Shresth-Deorari/Shresth-Wca",
+    "image": wcaShresth
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+    "month": "Ongoing Projects",
+    "year": "2024 & beyond",
+    "title": "Little Lemon Food App & Code Editor in WSL",
+    "results": [
+      { "title": "Capstone project for Meta’s Professional Android Development Certification." },
+      { "title": "Incorporating UI/UX principles, wireframing, and MVVM architecture." },
+      { "title": "Developing a Code Editor in C to deepen low-level programming skills closer to hardware." }
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
+    "link": "https://github.com/Shresth-Deorari/little-lemon",
+    "image": littleLemon
+  }  
 ];
 
 export const ProjectsSection = () => {
   return (
   <section className="pb-16 lg:py-24" id="Projects">
     <div className="container">
-      <SectionHeader eyebrow="Real-World Results" title="Featured Projects" description="See how i transformed concepts into egaging digital experiences."/>
-      <div className="flex flex-col mt-10 md:mt-20 gap-20">
+    <SectionHeader eyebrow="My Journey in Code" title="Featured Projects" description="Explore how I turned ideas into impactful solutions, across diverse domains ." />
+    <div className="flex flex-col mt-10 md:mt-20 gap-20">
         {portfolioProjects.map((project,projectIndex)=>(
           <Card key={project.title} className="px-8 pb-0 pt-8 md:pt-12 md:px-10 lg:px-20 lg:pt-16 after:pointer-events-none
           sticky" style={{
@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
               inline-flex gap-2 font-bold tracking-widest text-sm
               text-transparent bg-clip-text uppercase">
                 <span>
-                  {project.company} 
+                  {project.month} 
                 </span>
                 <span>&bull;</span>
                 <span>
@@ -85,7 +85,7 @@ export const ProjectsSection = () => {
                   </li>
                 ))}
               </ul>
-              <a href={project.link}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <button className="bg-white text-gray-950 h-12 w-full md:w-auto
                 rounded-xl font-semibold flex justify-center items-center 
                 gap-2 mt-8 px-6">

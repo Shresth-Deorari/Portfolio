@@ -8,16 +8,36 @@ import JavaScriptIcon from '@/assets/icons/square-js.svg'
 import HTMLIcon from '@/assets/icons/html5.svg'
 import CssIcon from '@/assets/icons/css3.svg'
 import ReactIcon from '@/assets/icons/react.svg'
-import ChromeIcon from '@/assets/icons/chrome.svg'
+import Java from '@/assets/icons/java.svg'
+import Kotlin from '@/assets/icons/kotlin.svg'
+import Python from '@/assets/icons/python.svg'
+import Cpp from '@/assets/icons/cpp.svg'
 import GithubIcon from '@/assets/icons/github.svg'
-import MapImage from '@/assets/images/map.png'
-import SmileMemoji from '@/assets/images/memoji-smile.png'
+import ChromeIcon from '@/assets/icons/chrome.svg'
+import IitpMap from '@/assets/images/iitp-map.png'
+import MyEmoji from '@/assets/images/file.png'
 import { CardHeader } from '@/components/CardHeader'
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const toolboxItems = [
+  {
+    title: 'C++',
+    iconType: Cpp
+  },
+  {
+    title: 'Kotlin',
+    iconType: Kotlin,
+  },
+  {
+    title: 'Java',
+    iconType: Java,
+  },
+  {
+    title: 'Python',
+    iconType: Python,
+  },
   {
     title: 'JavaScript',
     iconType: JavaScriptIcon,
@@ -35,18 +55,19 @@ const toolboxItems = [
     iconType: ReactIcon,
   },
   {
-    title: 'Chrome',
-    iconType: ChromeIcon,
-  },
-  {
     title: 'Github',
     iconType: GithubIcon,
+  },
+  {
+    title: 'Chrome',
+    iconType: ChromeIcon,
   }
+  
 ];
 
 const hobbies = [
   {
-    title: 'Painting',
+    title: 'Sketching',
     emoji: '🎨',
     top: "5%",
     left: "5%",
@@ -58,8 +79,8 @@ const hobbies = [
     top: "5%",
   },
   {
-    title: 'Hiking',
-    emoji: '👟',
+    title: 'Guitarist',
+    emoji: '🎸',
     left: "35%",
     top: "40%",
   },
@@ -136,7 +157,7 @@ export const AboutSection = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image src={MapImage} alt="map" className="h-full w-full object-cover object-left-top" />
+              <Image src={IitpMap} alt="map" className="h-full w-full object-cover object-left-top" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
               size-20 rounded-full after:content-[''] 
               after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 
@@ -145,7 +166,12 @@ export const AboutSection = () => {
                  bg-gradient-to-r from-emerald-300 to-sky-400 animate-ping [animation-duration:2s] -z-20"></div>
                  <div className="absolute inset-0 rounded-full
                  bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
-                <Image src={SmileMemoji} alt="smiling memoji" className="size-20" />
+                <Image 
+                  src={MyEmoji} 
+                  alt="smiling memoji" 
+                  className="size-20 overflow-clip rounded-full object-cover" 
+                  style={{objectPosition: '0 2px'}} 
+                />
               </div>
             </Card>
           </div>

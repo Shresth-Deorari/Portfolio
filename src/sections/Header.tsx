@@ -24,7 +24,6 @@ export const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
