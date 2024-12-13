@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'build', // Specify your custom build directory here
+  distDir: 'out', // Specify your custom build directory here
   webpack(config) {
     // Same custom SVG handling as before
     const fileLoaderRule = config.module.rules.find((rule) =>
