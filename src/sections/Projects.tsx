@@ -24,7 +24,7 @@ const portfolioProjects = [
   {
     "month": "August",
     "year": "2024",
-    "title": "WhatsApp Chat Analyser",
+    "title": "WhatsApp Chat Analyzer",
     "results": [
       { "title": "Performed EDA and sentiment analysis, providing valuable insights." },
       { "title": "Utilized SQLAlchemy for database integration for real-time data exploration." },
